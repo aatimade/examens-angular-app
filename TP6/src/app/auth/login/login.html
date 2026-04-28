@@ -1,0 +1,39 @@
+<div class="login-container">
+
+  <div class="login-card">
+
+    <h1 class="title">🎓 ExamENS</h1>
+    <p class="subtitle">Gestion des Examens & Notes</p>
+    <span class="school">ENS Meknès</span>
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+      <label>Email</label>
+      <input type="email" formControlName="email" placeholder="votre@email.ma">
+
+      <label>Mot de passe</label>
+      <input type="password" formControlName="password" placeholder="••••••••">
+
+      <button type="submit" [disabled]="loading()">
+        {{ loading() ? 'Connexion...' : 'Se connecter' }}
+      </button>
+
+      <p class="error" *ngIf="errorMsg()">
+        {{ errorMsg() }}
+      </p>
+
+    </form>
+
+    <div class="demo">
+      <p>Accès rapide</p>
+
+      <div class="buttons">
+        <button type="button" (click)="fillAdmin()">Admin</button>
+        <button type="button" (click)="fillEnseignant()">Enseignant</button>
+        <button type="button" (click)="fillEtudiant()">Étudiant</button>
+      </div>
+    </div>
+
+  </div>
+
+</div>

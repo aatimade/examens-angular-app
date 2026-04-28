@@ -1,0 +1,122 @@
+/* Background */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  font-family: Arial, sans-serif;
+}
+
+/* Card */
+.login-card {
+  width: 380px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+/* Title */
+.title {
+  margin: 0;
+  color: #1e3c72;
+}
+
+.subtitle {
+  margin: 5px 0;
+  color: #555;
+}
+
+.school {
+  font-size: 12px;
+  color: gray;
+}
+
+/* Form */
+form {
+  margin-top: 20px;
+  text-align: left;
+}
+
+label {
+  font-size: 13px;
+  color: #333;
+  display: block;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #2a5298;
+  box-shadow: 0 0 5px rgba(42,82,152,0.4);
+}
+
+/* Button */
+button[type="submit"] {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background: #2a5298;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1e3c72;
+}
+
+/* Error */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Demo */
+.demo {
+  margin-top: 20px;
+}
+
+.demo p {
+  font-size: 12px;
+  color: gray;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.buttons button {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background: #eee;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 12px;
+}
+
+.buttons button:hover {
+  background: #2a5298;
+  color: white;
+}
